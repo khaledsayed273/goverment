@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    direction: rtl;
+}
+
+video {
+    height: 95% !important;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .slick-dots{
+    display: flex !important;
+    justify-content: center ;
+  }
+
+
+  .slick-next , .slick-prev{
+    display: none !important;
+  }
+
+  @media (max-width:767px) {
+    .slick-dots li:not(.next ,.previous) {
+      display: none !important;
+    }
+    
+  }
+  .slick-dots li:is(.next , .selected , .previous) {
+    font-weight: 900 !important;
+
+  }
+  .slick-slider .slick-dots > li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 19px;   
+    margin: 0;
+  }
+  .slick-slider .slick-dots > li.disabled {
+    background-color: #aaaaaa ;
+    color: white;
+  }
+
+
+  .slick-slider .slick-dots> li > a{
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 17px 19px;  
+    border-radius: 7px;
+  }
+  .slick-dots .selected a{
+    
+    background-image: linear-gradient(to right, #0061FF, #3c939c);
+    color: white;
+    
+  }
