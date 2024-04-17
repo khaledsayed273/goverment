@@ -73,8 +73,8 @@ function Navbar() {
                     <ul className='block md:flex'>
                         {ul.map((item) => (
                             item.path ? (
-                                <li onClick={() => setOpen(false)} className={`${item.path === pathName ? "text-[#f5c6b6]" : "text-white"} md:mx-5 lg:mx-8  my-16 text-center md:my-0 md:text-xl lg:text-2xl ${pathName === "/about" || pathName ===  "/contact" ? "text-white md:text-[#01579B]" : "text-white"}  hover:text-[#f5c6b6] transition-all font-semibold`} key={item.id}>
-                                    <Link href={item.path}>
+                                <li onClick={() => setOpen(false)} className={`${pathName === "/about" || pathName ===  "/contact" ? "text-white md:text-[#01579B]" : "text-white"}  hover:text-[#f5c6b6]  md:mx-5 lg:mx-8  my-16 text-center md:my-0 md:text-xl lg:text-2xl  transition-all font-semibold`} key={item.id}>
+                                    <Link className={`${item.path === pathName && "text-[#f5c6b6]" }`} href={item.path}>
                                         {item.name}
                                     </Link>
                                 </li>
