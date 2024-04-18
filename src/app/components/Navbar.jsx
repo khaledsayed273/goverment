@@ -1,7 +1,9 @@
 "use client"
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import logo from "../../../public/logo.svg"
 
 function Navbar() {
 
@@ -106,8 +108,11 @@ function Navbar() {
                 </button>
 
                 <Link className='flex flex-col justify-center items-center bg-gradient-to-r from-[#FFA585] to-[#FFEDA0] rounded-b-3xl py-3 md:py-5 px-4 md:px-7' href="/">
-                    <div className='font-bold md:text-2xl text-blueColor'>كوبري دمياط </div>
-                    <div className='font-bold md:text-2xl text-blueColor'> الحضاري </div>
+                    <div className='relative w-[60px]'>
+                        <Image src={logo} alt='logo'/>
+                    </div>
+
+                    <div className='font-bold md:text-md mt-2 text-blueColor'> كوبري دمياط الحضاري </div>
                 </Link>
 
             </div>
