@@ -1,8 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import governor from "../../../public/images/المحافظ.png"
-import rizk from "../../../public/images/رزق.png"
-import aya from "../../../public/images/aya.png"
+import rana from "../../../public/images/big boss/rana.jpg"
+import rehab from "../../../public/images/big boss/rehab.jpg"
+import rizk from "../../../public/images/big boss/رزق.png"
+import mnn from "../../../public/images/small boss/mnn.jpg"
+import ayaNasser from "../../../public/images/small boss/aya nasser.jpg"
+import asmaa from "../../../public/images/small boss/asmaa.jpg"
+import walled from "../../../public/images/small boss/walled.jpg"
+import aya from "../../../public/images/aya.jpg"
 import Link from 'next/link'
 
 function about() {
@@ -10,15 +16,15 @@ function about() {
     const data1 = [
         {
             id: 1,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ رانا ذكي سرحان",
+            about: "المدير التنفيذي للمشروع",
+            image: rana
         },
         {
             id: 2,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ رحاب فتحي المغلاوي",
+            about: " المدير المالي للمشروع",
+            image: rehab
         },
         {
             id: 3,
@@ -31,39 +37,45 @@ function about() {
     const data2 = [
         {
             id: 4,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ منن نادي يوسف",
+            about: "مشرفي قاعة",
+            image: mnn
         },
         {
             id: 5,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/اية ناصر عيد",
+            about: "مسئولة المبيعات",
+            image: ayaNasser
         },
         {
             id: 6,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ اسماء محمد رضوان",
+            about: "مسئول it",
+            image: asmaa
+        },
+        {
+            id: 7,
+            name: "أ/ وليد احمد مصطفي رطب",
+            about: "مشرف اداري",
+            image: walled
         },
     ]
 
     const data3 = [
         {
-            id: 7,
+            id: 8,
             name: "أ/ محمد رزق",
             about: "مسؤل العلاقات العامه",
             image: rizk
         },
         {
-            id: 8,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
+            id: 9,
+            name: "اية علاء ",
+            about: "UI UX Designer",
             image: aya
         },
         {
-            id: 9,
+            id: 10,
             name: "أ/ محمد رزق",
             about: "مسؤل العلاقات العامه",
             image: rizk
@@ -105,7 +117,7 @@ function about() {
                 </div>
 
                 <div className='mt-5 md:mt-16'>
-                    <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl'>اعضاء اخرى </h1>
+                    <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl'>اعضاء اخرين </h1>
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
                         {data2.map((item) => (
                             <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
