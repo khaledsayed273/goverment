@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import Header from "./components/Header";
 import Image from "next/image";
-import cover from "../../public/images/cover.jpeg"
-import bridge from "../../public/images/bridge.jpeg"
+import home from "../../public/images/home.jpeg"
+import history from "../../public/images/history.jpg"
 import SwiperHome from "./components/Home/SwiperHome";
 
 const VideoComponent = dynamic(() => import('./components/VideoComponent'), { ssr: false })
@@ -26,7 +26,7 @@ async function page() {
 
   return (
     <>
-      <Header />
+      <Header img={home} />
       <main className="flex min-h-screen flex-col items-center p-3 md:p-5">
         <div className="container mx-auto">
 
@@ -49,7 +49,7 @@ async function page() {
           <div className="my-5 md:my-12 ">
             <div className="grid lg:grid-cols-2 gap-10">
               <div className="relative order-2 lg:order-1 overflow-hidden rounded-2xl w-full h-[300px] md:h-[400px] lg:h-[350px] xl:h-[450px]">
-                <Image sizes="(max-width:992px) , 100vw" priority src={cover} fill alt="cover" />
+                <Image sizes="(max-width:992px) , 100vw" priority src={home} fill alt="cover" />
               </div>
               <div className="md:mt-5 xl:mt-7 lg:order-2">
                 <h1 style={{lineHeight: "1.15"}} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center  text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text">الهدف من تجديده</h1>
@@ -65,7 +65,7 @@ async function page() {
 
             <div className="grid lg:grid-cols-2 gap-10 my-5 md:my-12">
               <div className="relative order-2 lg:order-1 overflow-hidden rounded-2xl w-full h-[300px] md:h-[400px] lg:h-[350px] xl:h-[450px]">
-                <Image sizes="(max-width:992px) , 100vw" priority src={bridge} fill alt="bridge" />
+                <Image sizes="(max-width:992px) , 100vw" priority src={history} fill alt="bridge" />
               </div>
               <div className="md:mt-5 xl:mt-7 lg:order-2">
                 <h1 style={{lineHeight: "1.15"}} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center   text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text"> عن الكوبرى </h1>

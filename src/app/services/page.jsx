@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Link from 'next/link'
 import Image from 'next/image'
+import servicesImg from "../../../public/images/servies.jpg"
 
 const getServices = async (url, time) => {
     try {
@@ -20,7 +21,7 @@ async function services() {
 
     return (
         <>
-            <Header />
+            <Header img={servicesImg} />
             <main className="flex min-h-screen flex-col items-center  p-3 md:p-5">
                 <div className='container mx-auto'>
                     <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl'>خدماتنا</h1>

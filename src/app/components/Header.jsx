@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import cover from "../../../public/images/cover.jpeg"
 import ScrollTo from '../services/[details]/components/ScrollTo'
 
-function Header() {
+function Header({img}) {
 
     return (
         <header className='h-[600px] md:h-[800px] xl:h-screen w-full relative text-white'>
-            <Image priority sizes='(max-width:992px) , 100vw' src={cover} fill alt='cover' />
+            <Image priority sizes='(max-width:992px) , 100vw' src={img} fill alt='cover' />
             <div className="absolute w-full h-full left-0 top-0 bg-[#14274A]/60">
             </div>
             <div className='absolute  z-40 w-full h-full md:h-[80%] left-0 bottom-0 p-10 '>
