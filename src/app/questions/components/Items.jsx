@@ -25,7 +25,7 @@ function Items({data}) {
                 </div>
                 <h1 className='text-center text-[#01579B] font-bold w-full'>{item.question}</h1>
             </div>
-            <div className={`  transition-height duration-300 ${isVisible[index] ? 'h-36 md:h-28 overflow-auto' : ' h-0 overflow-hidden'}`}>
+            <div className={`  transition-height duration-300 ${isVisible[index] ? 'h-36  overflow-auto' : ' h-0 overflow-hidden'}`}>
                 <p className='text-center text-[#01579B] font-semibold md:font-medium mt-5 text-sm lg:text-base'>{item.answer}</p>
             </div>
         </div>

@@ -16,6 +16,7 @@ async function questions() {
     const time = +process.env.time
     const data = await getData(url, time)
 
+
     return (
         <>
             {/* <Header /> */}
