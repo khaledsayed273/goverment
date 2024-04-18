@@ -14,6 +14,8 @@ function Items({data}) {
         });
     };
 
+    console.log(data);
+
   return (
     data.map((item, index) => (
         <div key={index} className='relative w-full lg:w-2/3 overflow-hidden bg-white p-5 mb-7'>
