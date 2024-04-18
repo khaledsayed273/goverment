@@ -17,6 +17,7 @@ async function questions() {
     const data = await getData(url, time)
 
 
+
     return (
         <>
             {/* <Header /> */}
