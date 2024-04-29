@@ -15,7 +15,7 @@ async function article() {
     return (
         <>
             <Header img={articleImg} />
-            <main className="flex min-h-screen flex-col items-center  p-3 md:p-5">
+            <main className="flex flex-col items-center  p-3 md:p-5">
                 <div className='container mx-auto'>
                     <p className=' mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
 

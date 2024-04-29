@@ -23,7 +23,7 @@ async function history() {
   return (
     <>
       <Header img={historyImg} />
-      <main className="flex min-h-screen flex-col items-center p-3 md:p-5">
+      <main className="flex flex-col items-center p-3 md:p-5">
         <div className='container mx-auto'>
           <p className=' font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2 mx-auto 2xl:w-[80%]'>
             تعرف على اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز و واحدا من اوئل الكباري الحديثة في العالم الي صممت لعبور قطارات السكة الحديدية

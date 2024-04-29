@@ -21,7 +21,7 @@ async function questions() {
     return (
         <>
             {/* <Header /> */}
-            <main className="flex min-h-screen flex-col items-center mt-28 p-3 md:p-5">
+            <main className="flex min-h-svh flex-col items-center mt-28 p-3 md:p-5">
                 <div className='container mx-auto'>
                     <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl'>الاسئلة الشائعة</h1>
 

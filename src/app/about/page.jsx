@@ -3,11 +3,12 @@ import React from 'react'
 import governor from "../../../public/images/المحافظ.png"
 import rana from "../../../public/images/big boss/rana.jpg"
 import rehab from "../../../public/images/big boss/rehab.jpg"
-import rizk from "../../../public/images/big boss/رزق.png"
+import ahmed from "../../../public/images/big boss/ahmed.jpg"
 import mnn from "../../../public/images/small boss/mnn.jpg"
 import ayaNasser from "../../../public/images/small boss/aya nasser.jpg"
 import asmaa from "../../../public/images/small boss/asmaa.jpg"
 import walled from "../../../public/images/small boss/walled.jpg"
+import rizk from "../../../public/images/small boss/رزق.png"
 import aya from "../../../public/images/aya.jpg"
 import Link from 'next/link'
 
@@ -28,12 +29,12 @@ function about() {
         },
         {
             id: 3,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ أحمد مصباح محمد حجاج",
+            about: "المدير الاداري للمشروع",
+            image: ahmed
         },
+    
     ]
-
     const data2 = [
         {
             id: 4,
@@ -43,7 +44,7 @@ function about() {
         },
         {
             id: 5,
-            name: "أ/اية ناصر عيد",
+            name: "أ/ اية ناصر عيد",
             about: "مسئولة المبيعات",
             image: ayaNasser
         },
@@ -59,23 +60,28 @@ function about() {
             about: "مشرف اداري",
             image: walled
         },
-    ]
-
-    const data3 = [
         {
             id: 8,
             name: "أ/ محمد رزق",
             about: "مسؤل العلاقات العامه",
             image: rizk
         },
+    ]
+    const data3 = [
         {
             id: 9,
+            name: "أ/ محمد رزق",
+            about: "مسؤل العلاقات العامه",
+            image: rizk
+        },
+        {
+            id: 10,
             name: "اية علاء ",
             about: "UI UX Designer",
             image: aya
         },
         {
-            id: 10,
+            id: 11,
             name: "أ/ محمد رزق",
             about: "مسؤل العلاقات العامه",
             image: rizk
@@ -83,7 +89,7 @@ function about() {
     ]
 
     return (
-        <main className="flex min-h-screen flex-col items-center  p-3 md:p-5">
+        <main className="flex flex-col items-center  p-3 md:p-5">
             <div className='container mx-auto px-0 md:px-10'>
                 
                 <div className='mt-32 flex md:items-center flex-col md:flex-row'>
@@ -99,9 +105,29 @@ function about() {
                         </p>
                     </div>
                 </div>
-                
-                <div className='mt-5 md:mt-16'>
 
+                <div className='mt-5 md:mt-16'>
+                    <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl mb-4'>فريق عمل الموقع الالكترونى</h1>
+                    <p className='text-[#01579B] font-bold text-center text-sm md:text-xl lg:w-[85%] xl:w-[75%] 2xl:w-[60%] mx-auto'>يشرف فريق عمل ميجاترون على هذا الموقع الالكترونى ويسهل سبل التواصل لضمان
+                        الاداء الفعال وتنفيذ جميع الانشطه داخل الموقع بشكل محترف وايضا المساعده على
+                        تعزيز الثقه لدى الجمهور يمكنك التعرف علي المزيد عنهم من خلال موقعهم الالكترونى
+                        <Link className='ms-2 text-[#f16a08] underline decoration-solid	 decoration-[#f16a08]' target='_blank' href={"https://www.megatron-soft.com"}>Megatron-soft</Link>
+                    </p>
+                    {/* <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
+                        {data3.map((item) => (
+                            <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
+                                <div className='relative w-full h-[300px] md:h-[300px] overflow-hidden rounded-3xl'>
+                                    <Image sizes='(min-width:992px), 100vw' fill src={item.image} alt={item.name} />
+                                </div>
+                                <h1 style={{lineHeight: "1.15"}} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h1>
+                                <p className='text-center text-xl md:text-2xl text-[#01579B] font-bold mt-2'>{item.about}</p>
+                            </div>
+                        ))}
+                    </div> */}
+                </div>
+
+
+                <div className='mt-5 md:mt-16'>
                     <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl '>مجلس الامناء والمسؤليين</h1>
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
                         {data1.map((item) => (
@@ -122,7 +148,7 @@ function about() {
                         {data2.map((item) => (
                             <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
                                 <div className='relative w-full h-[300px] md:h-[300px] overflow-hidden rounded-3xl'>
-                                    <Image  sizes='(min-width:992px), 100vw'  fill src={item.image} alt={item.name} />
+                                    <Image sizes='(min-width:992px), 100vw'  fill src={item.image} alt={item.name} />
                                 </div>
                                 <h1 style={{lineHeight: "1.15"}} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h1>
                                 <p className='text-center text-xl md:text-2xl text-[#01579B] font-bold mt-2'>{item.about}</p>
@@ -130,27 +156,6 @@ function about() {
                         ))}
                     </div>
                 </div>
-
-                <div className='mt-5 md:mt-16'>
-                    <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl mb-4'>فريق عمل الموقع الالكترونى</h1>
-                    <p className='text-[#01579B] font-bold text-center text-sm md:text-xl lg:w-[85%] xl:w-[75%] 2xl:w-[60%] mx-auto'>يشرف فريق عمل ميجاترون على هذا الموقع الالكترونى ويسهل سبل التواصل لضمان
-                        الاداء الفعال وتنفيذ جميع الانشطه داخل الموقع بشكل محترف وايضا المساعده على
-                        تعزيز الثقه لدى الجمهور يمكنك التعرف علي المزيد عنهم من خلال موقعهم الالكترونى
-                        <Link className='ms-2 text-[#f16a08] underline decoration-solid	 decoration-[#f16a08]' target='_blank' href={"https://www.megatron-soft.com"}>Megatron-soft</Link>
-                    </p>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
-                        {data3.map((item) => (
-                            <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
-                                <div className='relative w-full h-[300px] md:h-[300px] overflow-hidden rounded-3xl'>
-                                    <Image sizes='(min-width:992px), 100vw' fill src={item.image} alt={item.name} />
-                                </div>
-                                <h1 style={{lineHeight: "1.15"}} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h1>
-                                <p className='text-center text-xl md:text-2xl text-[#01579B] font-bold mt-2'>{item.about}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
             </div>
         </main>
     )

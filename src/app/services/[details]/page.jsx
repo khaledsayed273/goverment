@@ -20,6 +20,8 @@ async function servicesDetails({ params }) {
     const url = process.env.baseUrl
     const time = +process.env.time
     const details = await getServicesDetails(url, time, params.details)
+   
+   
     return (
         details.status && (
             <>
@@ -48,7 +50,7 @@ async function servicesDetails({ params }) {
                 </header>
 
 
-                <main className="flex min-h-screen flex-col items-center  p-3 md:p-5">
+                <main className="flex flex-col items-center p-3 md:p-5">
                     <div className='container mx-auto'>
                         <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl '>معلومات عن القاعة</h1>
                         <p className=' md:mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>

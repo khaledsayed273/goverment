@@ -22,7 +22,7 @@ async function contact() {
     return (
         <>
             <Toaster position="top-right" richColors />
-            <main className="flex min-h-screen flex-col items-center  p-3 md:p-5 mt-24">
+            <main className="flex flex-col items-center  p-3 md:p-5 mt-24">
                 <div className='container mx-auto'>
                     <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl'>تواصل معنا</h1>
                     <div className='bg-[#E7F2FF] rounded-3xl py-5 px-3 sm:p-5 md:p-10 lg:p-16'>
