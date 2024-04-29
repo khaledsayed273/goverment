@@ -19,10 +19,11 @@ async function history() {
   const url = process.env.baseUrl
   const time = +process.env.time
   const data = await getData(url, time)
+  const about = "يعد كوبرى دمياط المعدني أحد المعالم التاريخية، حيث تم تحويله لمزار سياحي يضم قاعة اجتماعات ومحاضرات ومعارض فنون تشكيلية وتم تسجيله كأثر بقرار وزاري عام 2010 ويعد من أقدم الكباري المعدنية المتحركة على مستوى العالم"
   
   return (
     <>
-      <Header img={historyImg} />
+      <Header img={historyImg} about={about} />
       <main className="flex flex-col items-center p-3 md:p-5">
         <div className='container mx-auto'>
           <p className=' font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2 mx-auto 2xl:w-[80%]'>

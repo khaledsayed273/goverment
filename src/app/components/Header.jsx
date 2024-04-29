@@ -2,7 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import ScrollTo from '../services/[details]/components/ScrollTo'
 
-function Header({img}) {
+function Header({ img, about }) {
+
+    const defaultAbout = `
+تعرف على أقدم كوبري سكة حديد معدني في العالم الذي يفتح بشكل دائري حول محور الارتكاز،
+وهو واحد من أوائل الكباري الحديثة في العالم التي صممت لعبور قطارات السكك الحديدية.
+`;
+
 
     return (
         <header className='h-[600px] md:h-[800px] xl:h-screen w-full relative text-white'>
@@ -23,10 +29,14 @@ function Header({img}) {
                                 الحضاري
                             </div>
                         </div>
-                        <p className='mt-10 font-medium	lg:text-2xl	w-1/2 hidden md:block'>تعرف على اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز
-                            و واحدا من اوئل الكباري الحديثة في العالم الي صممت لعبور قطارات السكة الحديدية</p>
+                        <p className='mt-10 font-medium	lg:text-2xl	w-1/2 hidden md:block'>
+
+
+                            {about ? about : defaultAbout}
+                        </p>
+
                     </div>
-                    <ScrollTo/>
+                    <ScrollTo />
 
                 </div>
             </div>

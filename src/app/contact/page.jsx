@@ -95,7 +95,7 @@ async function contact() {
                                     {setting.data.email && (
 
                                         <Link className={classLink} href={`mailto:${setting.data.email}`} aria-label="gmail">
-                                            <svg width="55" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className='w-[35px]' viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M44.8218 1.42725L41.4085 4.09391L26.8751 14.8939L12.3418 3.98725L8.92845 1.32058C8.12433 0.655367 7.14271 0.240687 6.10522 0.127914C5.06772 0.0151406 4.01994 0.209231 3.09167 0.686138C2.16341 1.16304 1.39545 1.90181 0.882955 2.81091C0.370458 3.72001 0.135938 4.75949 0.208448 5.80058V36.7072C0.208448 37.6691 0.590542 38.5916 1.27067 39.2717C1.95081 39.9518 2.87326 40.3339 3.83511 40.3339H12.3418V19.7472L26.8751 30.6539L41.4085 19.7472V40.3339H49.9151C50.877 40.3339 51.7994 39.9518 52.4796 39.2717C53.1597 38.5916 53.5418 37.6691 53.5418 36.7072V5.80058C53.5919 4.76848 53.341 3.74406 52.8198 2.85184C52.2985 1.95962 51.5293 1.23804 50.6057 0.774795C49.682 0.311553 48.6437 0.126605 47.6169 0.242434C46.5901 0.358262 45.619 0.769878 44.8218 1.42725Z" fill="white" />
                                             </svg>
                                         </Link>
@@ -103,7 +103,7 @@ async function contact() {
 
                                     {setting.data.whatsapp && (
                                         <Link target='_blank' className={classLink} href={`${setting.data.whatsapp}`} aria-label="whatsapp">
-                                            <svg width="55" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className='w-[40px]' viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <mask id="mask0_122_743" maskUnits="userSpaceOnUse" x="7" y="6" width="52" height="52">
                                                     <path d="M7.41675 6.66724H58.0834V57.3339H7.41675V6.66724Z" fill="white" />
                                                 </mask>
@@ -128,7 +128,7 @@ async function contact() {
 
                                     {setting.data.facebook && (
                                         <Link target='_blank' className={classLink} href={`${setting.data.facebook}`} aria-label="facebook">
-                                            <svg width="20" height="54" viewBox="0 0 35 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className='w-[25px]' viewBox="0 0 35 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M29.4583 5.66724H24.1249C17.4583 5.66724 13.4583 9.66724 13.4583 16.3339V48.3339" stroke="white" strokeWidth="10" strokeLinecap="round" />
                                                 <path d="M5.45825 27.0005H24.1249" stroke="white" strokeWidth="10" strokeLinecap="round" />
                                             </svg>
