@@ -41,7 +41,7 @@ async function services() {
                                             </Link>
                                         </div>
                                         <div className='relative my-auto w-full h-[270px] md:h-[250px] lg:h-[350px] overflow-hidden rounded-3xl'>
-                                            <Image sizes='(max-width:992px), 100vw' fill src={item.image} alt='image' />
+                                            <Image style={{objectFit: "cover"}} sizes='(max-width:992px), 100vw' fill src={item.image} alt='image' />
                                         </div>
                                     </div>
                                 ))
