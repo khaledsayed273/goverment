@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,11 +39,10 @@ function SwiperHome({ data, title }) {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         lazyLoad: true,
         swipeToSlide: true,
         beforeChange: (current, next) => setSlideIndex(next),
-
         responsive: [
             {
                 breakpoint: 1030,
@@ -96,12 +95,12 @@ function SwiperHome({ data, title }) {
                 ref={slider => {
                     sliderRef = slider;
                 }}
-                className='h-[300px] mb-16 md:mb-20'
+                className='h-[300px] mt-7 mb-16 md:mb-20'
                 {...settings}
             >
                 {data?.map((item, index) => (
 
-                    <div key={index} className="relative w-full h-[250px] overflow-hidden rounded-xl">
+                    <div key={index} className="relative w-full h-[230px] overflow-hidden rounded-xl">
                         <Image placeholder="blur"
                             blurDataURL={`data:image/svg+xml;base64,${toBase64(
                                 convertImage(700, 475)

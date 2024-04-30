@@ -8,7 +8,6 @@ const getData = async (url, time) => {
         const res = await fetch(`${url}/settings`, { next: { revalidate: time } })
         return res.json()
     } catch (e) {
-
         return e
     }
 }
@@ -19,6 +18,7 @@ async function contact() {
     const time = +process.env.time
     const setting = await getData(url, time)
     const classLink = "hover:rotate-[360deg] transition-all duration-500 mb-14 md:mb-0"
+
     return (
         <>
             <Toaster position="top-right" richColors />
@@ -66,19 +66,18 @@ async function contact() {
                                     {/* email */}
                                     {setting.data.email && (
                                         <div className='flex justify-center items-center mt-5'>
-                                        <div className='bg-[#d9eafe] p-3'>
-                                            <svg width="30" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M28.0001 0.633301H4.0001C2.3001 0.633301 0.850098 2.0333 0.850098 3.7833V19.9833C0.850098 21.6833 2.2501 23.1333 4.0001 23.1333H28.0001C29.7001 23.1333 31.1501 21.7333 31.1501 19.9833V3.7333C31.1501 2.0333 29.7001 0.633301 28.0001 0.633301ZM28.0001 2.8833C28.0501 2.8833 28.1001 2.8833 28.1501 2.8833L16.0001 10.6833L3.8501 2.8833C3.9001 2.8833 3.9501 2.8833 4.0001 2.8833H28.0001ZM28.0001 20.7833H4.0001C3.5001 20.7833 3.1001 20.3833 3.1001 19.8833V5.0833L14.8001 12.5833C15.1501 12.8333 15.5501 12.9333 15.9501 12.9333C16.3501 12.9333 16.7501 12.8333 17.1001 12.5833L28.8001 5.0833V19.9333C28.9001 20.4333 28.5001 20.7833 28.0001 20.7833Z" fill="#3758F9" />
-                                            </svg>
-
+                                            <div className='bg-[#d9eafe] p-3'>
+                                                <svg width="30" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.0001 0.633301H4.0001C2.3001 0.633301 0.850098 2.0333 0.850098 3.7833V19.9833C0.850098 21.6833 2.2501 23.1333 4.0001 23.1333H28.0001C29.7001 23.1333 31.1501 21.7333 31.1501 19.9833V3.7333C31.1501 2.0333 29.7001 0.633301 28.0001 0.633301ZM28.0001 2.8833C28.0501 2.8833 28.1001 2.8833 28.1501 2.8833L16.0001 10.6833L3.8501 2.8833C3.9001 2.8833 3.9501 2.8833 4.0001 2.8833H28.0001ZM28.0001 20.7833H4.0001C3.5001 20.7833 3.1001 20.3833 3.1001 19.8833V5.0833L14.8001 12.5833C15.1501 12.8333 15.5501 12.9333 15.9501 12.9333C16.3501 12.9333 16.7501 12.8333 17.1001 12.5833L28.8001 5.0833V19.9333C28.9001 20.4333 28.5001 20.7833 28.0001 20.7833Z" fill="#3758F9" />
+                                                </svg>
+                                            </div>
+                                            <div className='ms-3 text-[#01579B]'>
+                                                <h1 className='mb-1 font-bold'>البريد الالكتروني</h1>
+                                                <p className='font-sans text-sm md:text-base'>{setting.data.email}</p>
+                                            </div>
                                         </div>
-                                        <div className='ms-3 text-[#01579B]'>
-                                            <h1 className='mb-1 font-bold'>البريد الالكتروني</h1>
-                                            <p className='font-sans text-sm md:text-base'>{setting.data.email}</p>
-                                        </div>
-                                    </div>
                                     )}
-                                    
+
                                 </div>
                             </div>
                             {/* left */}
