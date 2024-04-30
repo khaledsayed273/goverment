@@ -39,14 +39,8 @@ function Form({ url }) {
             }
     }
 
-
-
-
-
-
-
-
     const classVar = "w-full min-h-full max-h-full font-sans font-normal outline outline-0  transition-all  border-2 text-base md:text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
+    
     return (
         <div className='relative'>
             <div className='absolute hidden md:block z-30 -left-7 -top-7 w-20 h-20 bg-gradient-to-r rounded-full g from-[#0061FF] to-[#47b4c0]'>
@@ -73,7 +67,7 @@ function Form({ url }) {
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} required aria-label="رسالتك" type="text" placeholder="رسالتك"
                         className={classVar} />
                 </div>
-                <button className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-white py-3 font-bold font-sans rounded-xl'>ارسل رسالتك الان</button>
+                <button className='bg-gradient-to-r hover:opacity-70 from-[#0061FF] to-[#47b4c0] text-white py-3 font-bold font-sans rounded-xl'>ارسل رسالتك الان</button>
             </form>
 
         </div>
