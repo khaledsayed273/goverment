@@ -19,7 +19,10 @@ function Form({ url }) {
             const req = await fetch(`${url}/contact`, {
                 method: "post",
                 headers: {
-                    "Content-Type": "application/json"
+                    "X-Requested-With": 'XMLHttpRequest',
+                    "Content-Type": 'application/json',
+                    "X-CSRF-Token": "CSRFToken",
+                    "Accept": 'application/json',
                 },
                 body: JSON.stringify(
                     {
