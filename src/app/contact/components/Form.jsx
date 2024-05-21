@@ -16,7 +16,8 @@ function Form({ url }) {
 
     const handleSubmit = async (e) => {
             e.preventDefault()
-            const req = await fetch(`${url}/contact`, {
+           try{
+                const req = await fetch(`https://mixtesting.online/api/v1/feedback`, {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",
@@ -24,15 +25,15 @@ function Form({ url }) {
                 },
                 body: JSON.stringify(
                     {
-                        user_name: fullName,
+                        name:fullName,
                         email,
-                        phone,
-                        message
+                        rate: phone,
+                        feedback:message
                     }
                 )
             })
             const res = await req.json()
-            if(res.status){
+            if(res){
                 toast.success('تم الارسال بنجاح')
                 setFirstName("")
                 setLastName("")
@@ -43,6 +44,9 @@ function Form({ url }) {
             }else{
                 toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
             }
+           }catch(e){
+            console.log(e);
+           }
     }
 
     const classVar = "w-full min-h-full max-h-full font-sans font-normal outline outline-0  transition-all  border-2 text-base md:text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
