@@ -34,6 +34,12 @@ function Form({ url }) {
             const res = await req.json()
             if(res.status){
                 toast.success('تم الارسال بنجاح')
+                setFirstName("")
+                setLastName("")
+                setFullName("")
+                setEmail("")
+                setPhone("")
+                setMessage("")
             }else{
                 toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
             }
