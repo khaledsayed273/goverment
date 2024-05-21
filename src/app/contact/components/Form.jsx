@@ -1,8 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
-import { NextResponse } from 'next/server'
-
 function Form({ url }) {
 
     const [firstName, setFirstName] = useState("")
@@ -21,7 +19,8 @@ function Form({ url }) {
             const req = await fetch(`${url}/contact`, {
                 method: "post",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    "Accept" : "application/json"
                 },
                 body: JSON.stringify(
                     {
@@ -41,8 +40,6 @@ function Form({ url }) {
                 setEmail("")
                 setPhone("")
                 setMessage("")
-            return NextResponse.json(res)
-
             }else{
                 toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
             }
