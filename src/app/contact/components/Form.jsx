@@ -16,25 +16,22 @@ function Form({ url }) {
 
     const handleSubmit = async (e) => {
             e.preventDefault()
-            const req = await fetch(`${url}/contact`, {
+            const req = await fetch(`https://mixtesting.online/api/v1/feedback`, {
                 method: "post",
                 headers: {
-                    "X-Requested-With": 'XMLHttpRequest',
-                    "Content-Type": 'application/json',
-                    "X-CSRF-Token": "CSRFToken",
-                    "Accept": 'application/json',
+                    "Content-Type": "application/json"
                 },
                 body: JSON.stringify(
                     {
-                        user_name: fullName,
+                        name: fullName,
                         email,
-                        phone,
-                        message
+                        rate: phone,
+                        feedback: message
                     }
                 )
             })
             const res = await req.json()
-            if(res.status){
+            if(res){
                 toast.success('تم الارسال بنجاح')
                 setFirstName("")
                 setLastName("")
