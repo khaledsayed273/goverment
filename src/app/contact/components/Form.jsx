@@ -13,24 +13,25 @@ function Form({ url }) {
 
     useEffect(() => {
         setFullName(`${firstName} ${lastName}`)
-    }, [firstName, lastName]) 
+    }, [firstName, lastName])
 
     const handleSubmit = async (e) => {
-            e.preventDefault()
-          try{ 
+        e.preventDefault()
+        try {
 
-            const req = await axios.post("https://mixtesting.online/api/v1/feedback" , {
-                name: fullName,
+            const req = await axios.post(`${url}/contact`, {
+                user_name: fullName,
                 email,
-                rate: phone,
-                feedback: message
-            } , {headers: {
-                "Content-Type": "application/json"
-            }})
+                phone,
+                message
+            }, {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
 
-            console.log(req);
-            
-            if(req){
+
+            if (req.status) {
                 toast.success('تم الارسال بنجاح')
                 setFirstName("")
                 setLastName("")
@@ -38,16 +39,16 @@ function Form({ url }) {
                 setEmail("")
                 setPhone("")
                 setMessage("")
-            }else{
-                toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
             }
-          }catch(e){
+        } catch (e) {
             console.log(e);
-          }
+            toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
+            
+        }
     }
 
     const classVar = "w-full min-h-full max-h-full font-sans font-normal outline outline-0  transition-all  border-2 text-base md:text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
-    
+
     return (
         <div className='relative'>
             <div className='absolute hidden md:block z-30 -left-7 -top-7 w-20 h-20 bg-gradient-to-r rounded-full g from-[#0061FF] to-[#47b4c0]'>
