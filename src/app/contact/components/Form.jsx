@@ -28,6 +28,7 @@ function Form({ url }) {
                 "Content-Type": "application/json"
             }})
 
+            console.log(req);
             
             if(req){
                 toast.success('تم الارسال بنجاح')
