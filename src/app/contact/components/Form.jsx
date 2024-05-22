@@ -12,7 +12,7 @@ function Form({ url }) {
 
     useEffect(() => {
         setFullName(`${firstName} ${lastName}`)
-    }, [firstName, lastName])
+    }, [firstName, lastName]) 
 
     const handleSubmit = async (e) => {
             e.preventDefault()
