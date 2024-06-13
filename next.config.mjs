@@ -8,6 +8,12 @@ const nextConfig = {
                 port: "",
                 pathname: "/**",
             },
+            {
+                protocol: "https",
+                hostname: "government.mixtesting.online",
+                port: "",
+                pathname: "/**",
+            },
         ],
     },
 };

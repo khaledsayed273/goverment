@@ -38,7 +38,7 @@ async function page() {
           </p>
 
           <div className="overflow-hidden mx-auto w-full h-[260px] sm:h-[300px] md:h-[400px] lg:w-[80%] lg:h-[600px] rounded-2xl">
-            <VideoComponent src={"/videos/testVideo.mp4"} />
+            <VideoComponent src={"/videos/homeEn.mp4"} />
           </div>
           <p className=' font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
             اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز

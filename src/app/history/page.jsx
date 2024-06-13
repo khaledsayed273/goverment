@@ -38,7 +38,7 @@ async function history() {
 
 
           <div className="overflow-hidden mx-auto w-full h-[260px] sm:h-[300px] md:h-[400px] lg:w-[80%] lg:h-[600px] rounded-2xl mt-5 lg:mt-0 xl:mt-10">
-            <VideoComponent src={"/videos/testVideo.mp4"} />
+            <VideoComponent src={"/videos/history.mp4"} />
           </div>
 
           <p className=' mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>

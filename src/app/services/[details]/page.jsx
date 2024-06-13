@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { Suspense } from 'react'
+import React from 'react'
 import SwiperHome from '@/app/components/Home/SwiperHome'
 import VideoComponent from '@/app/components/VideoComponent'
 import { notFound } from 'next/navigation'
