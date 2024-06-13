@@ -4,8 +4,7 @@ import Image from "next/image";
 import home from "../../public/images/home.jpeg"
 import history from "../../public/images/history.jpg"
 import SwiperHome from "./components/Home/SwiperHome";
-
-const VideoComponent = dynamic(() => import('./components/VideoComponent'), { ssr: false })
+import VideoComponent from './components/VideoComponent'
 
 
 const getData = async (url, time) => {
