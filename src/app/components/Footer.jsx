@@ -130,7 +130,7 @@ async function Footer() {
                             </div>
                         )}
 
-                        <span className='text-sm text-center sm:text-start mt-7 sm:mt-0'>© 2024 Megatron. All rights reserved.</span>
+                        <p className='text-sm mt-16 md:mt-0'>© 2024 <Link target='_blank' className='text-orange-500 0 hover:opacity-80' href={"https://www.megatron-soft.com"}>Megatron</Link> company All rights reserved.</p>
 
                     </div>
 
