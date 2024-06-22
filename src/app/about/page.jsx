@@ -35,13 +35,16 @@ function about() {
         },
     
     ]
+
     const data2 = [
+        
         {
             id: 4,
-            name: "أ/ منن نادي يوسف",
-            about: "مشرفي قاعة",
-            image: mnn
+            name: "أ/ محمد رزق",
+            about: "مسؤل العلاقات العامه",
+            image: rizk
         },
+        
         {
             id: 5,
             name: "أ/ اية ناصر عيد",
@@ -62,32 +65,12 @@ function about() {
         },
         {
             id: 8,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
+            name: "أ/ منن نادي يوسف",
+            about: "مشرفي قاعة",
+            image: mnn
         },
     ]
-    const data3 = [
-        {
-            id: 9,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
-        },
-        {
-            id: 10,
-            name: "اية علاء ",
-            about: "UI UX Designer",
-            image: aya
-        },
-        {
-            id: 11,
-            name: "أ/ محمد رزق",
-            about: "مسؤل العلاقات العامه",
-            image: rizk
-        },
-    ]
-
+  
     return (
         <main className="flex flex-col items-center  p-3 md:p-5">
             <div className='container mx-auto px-0 md:px-10'>
