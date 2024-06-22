@@ -3,9 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 import logo from "../../../public/logo.svg"
 
-const getData = async (url, time) => {
+const getData = async (url) => {
     try {
-        const res = await fetch(`${url}/settings`, { next: { revalidate: time } })
+        const res = await fetch(`${url}/settings`, { cache: "no-cache" })
         return res.json()
     } catch (e) {
 
@@ -17,8 +17,7 @@ const getData = async (url, time) => {
 async function Footer() {
 
     const url = process.env.baseUrl
-    const time = +process.env.time
-    const setting = await getData(url, time)
+    const setting = await getData(url)
     const ul = [
         {
             id: 1,
