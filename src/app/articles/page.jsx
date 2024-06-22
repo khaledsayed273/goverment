@@ -1,10 +1,10 @@
-import React, { Suspense } from 'react'
-import Header from '../components/Header'
+import React from 'react'
+// import Header from '../components/Header'
 import Articles from './components/Articles/Articles'
 import homeImg from "../../../public/images/home.jpeg"
 import Image from 'next/image'
 import Link from 'next/link'
-import articleImg from "../../../public/images/articles.jpg"
+// import articleImg from "../../../public/images/articles.jpg"
 
 
 
@@ -14,19 +14,14 @@ async function article() {
     const time = +process.env.time
     return (
         <>
-            <Header img={articleImg} />
-            <main className="flex flex-col items-center  p-3 md:p-5">
+            {/* <Header img={articleImg} /> */}
+            <main className="flex flex-col items-center mt-32 p-3 md:p-5">
                 <div className='container mx-auto'>
-                    <p className=' mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
-
-                        اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز
-                        و واحدا من اوائل الكباري الحديثة في العالم التي صممت لعبور قطارات السكة الحديدية
-                        لعبور المراكب و بطول كابولي يصل الي 30 مترا من جهتي الارتكاز و تنقل الحركة من خلال مجموعة تروس تحرك يدويا الي صينية دائري على 28 عجلة على شكل مخروط ناقص ليتحرك عليها الكوبري و بالتالى (فان القيمة التاريخية للكوبري ثابتة و مؤكدة و تستوجب عملا جاد للحفاظ عليه)
-                    </p>
+                    
 
                     <div className='bg-[#E7F2FF] rounded-xl p-3 md:py-5 md:px-10'>
                         <h1 style={{ lineHeight: "1.15" }} className='text-center bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-3xl lg:text-5xl font-black'>اخبار ومقالات</h1>
-                        <p className='text-center my-3 text-sm md:text-lg text-[#01579B] font-semibold'>يمكنك معرفه واطلاع ع مزيد من المعلومات الموثوقه عن كوبرى دمياط الحضارى من خلال تلك المقالات يمكنك زيارتها فى الوقت الحالى للتاكد من صحه المعلومات .</p>
+                        <p className='text-center my-3 text-sm md:text-lg text-[#01579B] font-semibold'>يمكنك معرفه والاطلاع علي المزيد من المعلومات الموثوقه عن كوبرى دمياط الحضارى من خلال تلك المقالات يمكنك زيارتها فى الوقت الحالى للتاكد من صحه المعلومات .</p>
                         
 
                         <Articles url={url} time={time} />

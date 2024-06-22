@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "@vidstack/react": "^1.10.9",
     "axios": "^1.7.2",
     "next": "14.1.4",

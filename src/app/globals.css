@@ -6,6 +6,33 @@ body {
     direction: rtl;
 }
 
+
+/*scroll*/
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bdcfe2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #124e86;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #164470;
+
+}
+
+
 video {
     height: 95% !important;
 }

@@ -86,11 +86,6 @@ function SwiperHome({ data, title }) {
     };
 
     return (
-        <div>
-            <h1 className=' font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
-                {title ? (title) : "عرف على اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز واحدا من اوئل الكباري الحديثة في العالم الي صممت لعبور قطارات السكة الحديدية"
-                }
-            </h1>
             <Slider
                 ref={slider => {
                     sliderRef = slider;
@@ -109,12 +104,8 @@ function SwiperHome({ data, title }) {
                     </div>
                 ))}
             </Slider>
-            {/* <div className="flex flex-1 justify-center mb-7">
-                <button onClick={() => next(sliderRef)} className=" relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-gradient-to-r from-[#0061FF] to-[#3c939c] px-4 py-2 text-sm font-medium text-white hover:opacity-50 ">Next</button>
-                <button onClick={previous} className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:opacity-50">Previous</button>
-            </div> */}
+         
 
-        </div>
     )
 }
 

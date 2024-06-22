@@ -19,29 +19,34 @@ async function history() {
   const url = process.env.baseUrl
   const time = +process.env.time
   const data = await getData(url, time)
-  const about = "يعد كوبرى دمياط المعدني أحد المعالم التاريخية، حيث تم تحويله لمزار سياحي يضم قاعة اجتماعات ومحاضرات ومعارض فنون تشكيلية وتم تسجيله كأثر بقرار وزاري عام 2010 ويعد من أقدم الكباري المعدنية المتحركة على مستوى العالم"
-  
+  const about = `تم إنشاء الكوبري على نهر النيل بإمبابة وتم نقله إلى دمياط عام 1927م وصولًا لنقله أمام مكتبة مصر العامة عام 2007م بتخطيط هندسي وعلمي مدروس من دكتور محمد فتحي البرادعي محافظ دمياط ووزير الإسكان الأسبق.
+حقق خلال فترة من 2007 حتى 2011 نقلة ثقافية وحضارية كبيرة وأصبح مركزا ثقافيا وبعدها تأتي أحداث ثورة يناير2011 ليتعرض لأعمال تخريب ونهب لمحتوياته.
+شهد كوبري دمياط التاريخي "جسر الحضارة" أعمال تطوير وإعادة تأهيل بمشاركة مجتمعية من شركة موبكو لإنتاج الأسمدة وقد قام بتنفيذه شركة المقاولون العرب من 2021 حتى عام 2024م.`
+
   return (
     <>
-      <Header img={historyImg} about={about} />
+      <Header title={`كوبري دمياط التاريخي (جسر الحضارة) يعد أحد أقدم الكباري المتحركة في العالم، ويعود كوبري دمياط المعدني  للحياة بعد ترميمه ورفع كفاءته وتم تحويله لـ"مزار سياحي".`} img={historyImg} about={about} />
       <main className="flex flex-col items-center p-3 md:p-5">
         <div className='container mx-auto'>
-          <p className=' font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2 mx-auto 2xl:w-[80%]'>
-            تعرف على اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز و واحدا من اوئل الكباري الحديثة في العالم الي صممت لعبور قطارات السكة الحديدية
+          <p className=' md:mb-5 font-semibold md:font-lg md:leading-10	text-md leading-8 md:text-xl	text-[#01579B] text-center md:px-10 py-2'>
+
+            تم صيانة جسم الكوبري وعزله ضد العوامل الجوية وتجهيزه بالأساسيات والأنظمة الحديثة، حيث إنه يضم قاعات مجهزة بالكامل (قاعات إجتماعات ومحاضرات ومعارض وفنون تشكيلية ومنطقة كافتريات ومطاعم وأنشطه مختلفة).
+            أشارت محافظ دمياط دكتورة منال عوض إلى حرص المحافظة على تنفيذ المشروع لاستعادة دوره العظيم وتعظيم الاستفادة منه كأثر تاريخي مسجل بقرار وزاري من وزاره الآثار عام 2010م.
+            قام رئيس الوزراء بافتتاح الكوبري بحضور محافظ دمياط، وأشاد رئيس الوزراء بجودة الأعمال المنفذة ووجه بأهمية الحفاظ على ما تم تنفيذه واستدامته وضرورة تنفيذ أعمال الصيانة الدائمة.
           </p>
 
           {data?.data?.images && (
             <SwiperHome data={data.data.images} />
           )}
 
-          <h1 style={{lineHeight: "1.15"}} className='text-center bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-3xl lg:text-6xl 	 font-semibold	'>“رحلة عبر الزمن” </h1>
+          <h1 style={{ lineHeight: "1.15" }} className='text-center bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-3xl lg:text-6xl 	 font-semibold	'>“رحلة عبر الزمن” </h1>
 
 
           <div className="overflow-hidden mx-auto w-full h-[260px] sm:h-[300px] md:h-[400px] lg:w-[80%] lg:h-[600px] rounded-2xl mt-5 lg:mt-0 xl:mt-10">
             <VideoComponent src={"/videos/history.mp4"} />
           </div>
 
-          <p className=' mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
+          <p className=' md:mb-5 font-semibold md:font-lg md:leading-10	text-md leading-8 md:text-xl	text-[#01579B] text-center md:px-10 py-2'>
 
             اقدم كوبري سكة حديد معدني في العالم يفتح بشكل دائري حول محور الارتكاز
             و واحدا من اوائل الكباري الحديثة في العالم التي صممت لعبور قطارات السكة الحديدية
