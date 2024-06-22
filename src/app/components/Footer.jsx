@@ -13,12 +13,12 @@ const getData = async (url, time) => {
     }
 }
 
+
 async function Footer() {
 
     const url = process.env.baseUrl
     const time = +process.env.time
     const setting = await getData(url, time)
-
     const ul = [
         {
             id: 1,
@@ -82,11 +82,8 @@ async function Footer() {
                                     <div className='relative w-[60px]'>
                                         <Image src={logo} alt='logo' />
                                     </div>
-
                                 </Link>
                             </div>
-
-
                         </div>
                     </div>
 
