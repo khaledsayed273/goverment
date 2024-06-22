@@ -142,7 +142,7 @@ async function contact() {
                     </div>
 
                     <div className='flex justify-center my-10'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.5437459180894!2d31.8043056!3d31.42669440000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI1JzM2LjEiTiAzMcKwNDgnMTUuNSJF!5e0!3m2!1sen!2seg!4v1711502253225!5m2!1sen!2seg" className='w-full xl:w-1/2 h-[270px] sm:h-[300px] md:h-[400px]' style={{ border: "0" }} ></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2407.2361553203873!2d31.802892730589978!3d31.432139741928793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9e500d28a6399%3A0x83637f044da69a7b!2zRGFtaWV0dGEgTWV0YWwgQnJpZGdlINmD2YjYqNix2Yog2K_ZhdmK2KfYtyDYp9mE2YXYudiv2YbZiiDYp9mE2YLYr9mK2YUg2KfZhNmF2YbZgtmI2YQg2YPZhdiy2KfYsSDYs9mK2KfYrdmK!5e0!3m2!1sar!2seg!4v1719098442568!5m2!1sar!2seg" className='w-full xl:w-1/2 h-[270px] sm:h-[300px] md:h-[400px]' loading="lazy" style={{ border: "0" }} referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
 
