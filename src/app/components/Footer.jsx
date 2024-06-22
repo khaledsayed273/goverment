@@ -58,7 +58,7 @@ async function Footer() {
     ]
 
     return (
-        <div className='relative bg-gradient-to-r from-[#144594] to-[#235c63]  px-5  md:px-10 w-full h-[540px] sm:h-[300px] '>
+        <div className='relative bg-gradient-to-r from-[#144594] to-[#235c63]  px-5  md:px-10 w-full h-[560px] sm:h-[300px] '>
 
             <div className='z-50 absolute left-0 top-0 right-0 bottom-0 '>
                 <div className='container mx-auto h-full flex flex-col justify-center  xl:px-5 2xl:px-0'>
@@ -129,7 +129,7 @@ async function Footer() {
                                 )}
                             </div>
                         )}
-                        <span className='text-base mt-16 md:mt-0'>All rights reserved to <Link target='_blank' className='text-orange-500 0 hover:opacity-80 font-semibold' href={"https://www.megatron-soft.com"}>Megatron</Link> © 2024</span>
+                        <span className='text-base text-center sm:text-start mt-8 sm:mt-0 md:mt-0'>All rights reserved to <Link target='_blank' className='text-orange-500 0 hover:opacity-80 font-semibold' href={"https://www.megatron-soft.com"}>Megatron</Link> © 2024</span>
                     </div>
 
                 </div>
