@@ -5,6 +5,17 @@ import history from "../../public/images/history.jpg"
 import SwiperHome from "./components/Home/SwiperHome";
 import VideoComponent from './components/VideoComponent'
 
+
+export const metadata = {
+  title: "كوبري دمياط الحضاري",
+  description: "تعرف على أقدم كوبري سكة حديد معدني في العالم الذي يفتح بشكل دائري حول محور الارتكاز، وهو واحد من أوائل الكباري الحديثة في العالم التي صممت لعبور قطارات السكك الحديدية.",
+  openGraph: {
+    title: "كوبري دمياط الحضاري",
+    images: ['../../public/images/home.jpeg'],
+    description: "تعرف على أقدم كوبري سكة حديد معدني في العالم الذي يفتح بشكل دائري حول محور الارتكاز، وهو واحد من أوائل الكباري الحديثة في العالم التي صممت لعبور قطارات السكك الحديدية.",
+  },
+};
+
 const getData = async (url, time) => {
   try {
     const res = await fetch(`${url}/pages/home`, { next: { revalidate: time } })
