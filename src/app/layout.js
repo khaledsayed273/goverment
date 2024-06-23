@@ -6,6 +6,12 @@ import Footer from "./components/Footer";
 const inter = Poppins({ subsets: ["latin"] , weight: ["500"] });
 
 
+export const metadata = {
+  openGraph: {
+    images: ['./images/home.jpeg'],
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ar">
