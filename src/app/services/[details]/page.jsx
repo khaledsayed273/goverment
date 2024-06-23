@@ -5,6 +5,36 @@ import VideoComponent from '@/app/components/VideoComponent'
 import { notFound } from 'next/navigation'
 import ScrollTo from './components/ScrollTo'
 
+export async function generateMetadata({ params }) {
+    const url = process.env.baseUrl
+    try {
+        const slug = params.details
+        const req = await fetch(`${url}/services/${slug}`).then((res) => res.json())
+        const service = await req.data
+        return {
+            title: service.name,
+            description: service.short_description,
+            openGraph: {
+                title: service.name,
+                images: [service.image],
+                description: service.short_description,
+            },
+        }
+    } catch (e) {
+        return {
+            title: "كوبري دمياط الحضاري",
+            description: `تم إنشاء الكوبري على نهر النيل بإمبابة وتم نقله إلى دمياط عام 1927م وصولًا لنقله أمام مكتبة مصر العامة عام 2007م بتخطيط هندسي وعلمي مدروس من دكتور محمد فتحي البرادعي محافظ دمياط ووزير الإسكان الأسبق. حقق خلال فترة من 2007 حتى 2011 نقلة ثقافية وحضارية كبيرة وأصبح مركزا ثقافيا وبعدها تأتي أحداث ثورة يناير2011 ليتعرض لأعمال تخريب ونهب لمحتوياته. شهد كوبري دمياط التاريخي "جسر الحضارة" أعمال تطوير وإعادة تأهيل بمشاركة مجتمعية من شركة موبكو لإنتاج الأسمدة وقد قام بتنفيذه شركة المقاولون العرب من 2021 حتى عام 2024م`,
+            openGraph: {
+                title: "كوبري دمياط الحضاري",
+                images: ['https://www.damietta-civil-bridge.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome.36f41db9.jpeg&w=1920&q=75'],
+                description: `تم إنشاء الكوبري على نهر النيل بإمبابة وتم نقله إلى دمياط عام 1927م وصولًا لنقله أمام مكتبة مصر العامة عام 2007م بتخطيط هندسي وعلمي مدروس من دكتور محمد فتحي البرادعي محافظ دمياط ووزير الإسكان الأسبق. حقق خلال فترة من 2007 حتى 2011 نقلة ثقافية وحضارية كبيرة وأصبح مركزا ثقافيا وبعدها تأتي أحداث ثورة يناير2011 ليتعرض لأعمال تخريب ونهب لمحتوياته. شهد كوبري دمياط التاريخي "جسر الحضارة" أعمال تطوير وإعادة تأهيل بمشاركة مجتمعية من شركة موبكو لإنتاج الأسمدة وقد قام بتنفيذه شركة المقاولون العرب من 2021 حتى عام 2024م`,
+            },
+        }
+    }
+}
+
+
+
 const getServicesDetails = async (url, time, slug) => {
     try {
         const res = await fetch(`${url}/services/${slug}`, { next: { revalidate: time } })
@@ -43,7 +73,7 @@ async function servicesDetails({ params }) {
                 </header>
                 <main className="flex flex-col items-center p-3 md:p-5">
                     <div className='container mx-auto'>
-                        <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl '>معلومات عن القاعة</h1>
+                        <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl '>معلومات عن القاعة</h1>
                         <p className=' md:mb-5 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2'>
                             {details.data.description}
                         </p>
@@ -62,7 +92,7 @@ async function servicesDetails({ params }) {
                         {details.data.events.length > 0 && (
                             <>
                                 <div>
-                                    <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h1>
+                                    <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h1>
                                 </div>
                                 <div >
                                     <SwiperHome title={true} />
