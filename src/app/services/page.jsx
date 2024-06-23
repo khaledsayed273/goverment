@@ -12,7 +12,6 @@ const getServices = async (url, time) => {
 }
 
 async function services() {
-
     const url = process.env.baseUrl
     const time = +process.env.time
     const services = await getServices(url, time)
@@ -22,7 +21,6 @@ async function services() {
             <main className="flex flex-col items-center mt-24  p-3 md:p-5">
                 <div className='container mx-auto'>
                     <h1 style={{lineHeight: "1.15"}} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl'>خدماتنا</h1>
-
                     <div className='mt-10'>
                         {services.status && (
                                 services.data.map((item) => (
@@ -44,12 +42,9 @@ async function services() {
                                 ))
                             
                         )}
-
-
                     </div>
                 </div>
             </main>
-
         </>
     )
 }

@@ -30,7 +30,6 @@ function Form({ url }) {
                 }
             })
 
-
             if (req.status) {
                 toast.success('تم الارسال بنجاح')
                 setFirstName("")
@@ -43,7 +42,6 @@ function Form({ url }) {
         } catch (e) {
             console.log(e);
             toast.error('حدثت مشكلة برجاء المحاولة مرة اخري')
-            
         }
     }
 
@@ -77,7 +75,6 @@ function Form({ url }) {
                 </div>
                 <button className='bg-gradient-to-r hover:opacity-70 from-[#0061FF] to-[#47b4c0] text-white py-3 font-bold font-sans rounded-xl'>ارسل رسالتك الان</button>
             </form>
-
         </div>
     )
 }

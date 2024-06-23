@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 
-function Item({ item, index }) {
+function Item({ item }) {
     const [isVisible, setIsVisible] = useState(false);
 
     const style = useSpring({

@@ -58,12 +58,10 @@ async function Footer() {
 
     return (
         <div className='relative bg-gradient-to-r from-[#144594] to-[#235c63]  px-5  md:px-10 w-full h-[560px] sm:h-[300px] '>
-
             <div className='z-50 absolute left-0 top-0 right-0 bottom-0 '>
                 <div className='container mx-auto h-full flex flex-col justify-center  xl:px-5 2xl:px-0'>
                     <div className='flex items-start flex-col sm:flex-row sm:items-center w-full  sm:mt-28 '>
-                        <div className='flex items-center flex-col sm:flex-row sm:items-center justify-between w-full   sm:border-t sm:border-b'>
-
+                        <div className='flex items-center flex-col sm:flex-row sm:items-center justify-between w-full sm:border-t sm:border-b'>
                             <div className='px-5  sm:px-0'>
                                 <ul className='text-white flex flex-col sm:flex-row'>
                                     {ul.map((item) => (
@@ -75,7 +73,6 @@ async function Footer() {
                                     ))}
                                 </ul>
                             </div>
-
                             <div className='mx-auto sm:mt-0 sm:mb-0 sm:ms-auto sm:me-0 py-3'>
                                 <Link aria-label="logoFooter" href={`/`} className='relative inline-block px-2 py-1 mt-1'>
                                     <div className='relative w-[60px]'>
@@ -90,7 +87,6 @@ async function Footer() {
                         {setting?.status && (
                             <div className='mt-7 sm:mt-0 flex justify-center'>
                                 {setting.data.whatsapp && (
-
                                     <Link aria-label="whatsApp" className='mx-3 hover:rotate-[360deg] transition-all duration-300' target='_blank' href={`${setting.data.whatsapp}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0,0,256,256">
                                             <g fill="#fffbfb" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"></path></g></g>
@@ -98,16 +94,13 @@ async function Footer() {
                                     </Link>
                                 )}
                                 {setting.data.facebook && (
-
                                     <Link aria-label="facebook" className='mx-3 hover:rotate-[360deg] transition-all duration-300' target='_blank' href={`${setting.data.facebook}`}>
                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fillRule="evenodd" clipRule="evenodd" d="M15.8035 0.828371H1.57348C1.45718 0.828108 1.34198 0.850819 1.23449 0.895201C1.127 0.939583 1.02933 1.00476 0.947101 1.08699C0.864869 1.16923 0.79969 1.26689 0.755308 1.37438C0.710926 1.48188 0.688215 1.59708 0.688479 1.71337V15.9434C0.688479 16.4334 1.08348 16.8284 1.57348 16.8284H9.23248V10.6314H7.14248V8.23137H9.23248V6.44837C9.23248 4.37937 10.5025 3.25937 12.3365 3.25937C13.2115 3.25937 13.9795 3.31237 14.2035 3.35537V5.51037H12.9125C11.9095 5.51037 11.7285 5.97937 11.7285 6.68337V8.23037H14.1075L13.7975 10.6304H11.7285V16.8284H15.8035C16.2935 16.8284 16.6885 16.4334 16.6885 15.9434V1.71337C16.6887 1.59708 16.666 1.48188 16.6216 1.37438C16.5773 1.26689 16.5121 1.16923 16.4299 1.08699C16.3476 1.00476 16.25 0.939583 16.1425 0.895201C16.035 0.850819 15.9198 0.828108 15.8035 0.828371Z" fill="white" />
                                         </svg>
                                     </Link>
                                 )}
-
                                 {setting.data.email && (
-
                                     <Link aria-label="linkedin" className='mx-3 hover:rotate-[360deg] transition-all duration-300' target='_blank' href={`mailto:${setting.data.email}`}>
                                         <svg width="20" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M44.8218 1.42725L41.4085 4.09391L26.8751 14.8939L12.3418 3.98725L8.92845 1.32058C8.12433 0.655367 7.14271 0.240687 6.10522 0.127914C5.06772 0.0151406 4.01994 0.209231 3.09167 0.686138C2.16341 1.16304 1.39545 1.90181 0.882955 2.81091C0.370458 3.72001 0.135938 4.75949 0.208448 5.80058V36.7072C0.208448 37.6691 0.590542 38.5916 1.27067 39.2717C1.95081 39.9518 2.87326 40.3339 3.83511 40.3339H12.3418V19.7472L26.8751 30.6539L41.4085 19.7472V40.3339H49.9151C50.877 40.3339 51.7994 39.9518 52.4796 39.2717C53.1597 38.5916 53.5418 37.6691 53.5418 36.7072V5.80058C53.5919 4.76848 53.341 3.74406 52.8198 2.85184C52.2985 1.95962 51.5293 1.23804 50.6057 0.774795C49.682 0.311553 48.6437 0.126605 47.6169 0.242434C46.5901 0.358262 45.619 0.769878 44.8218 1.42725Z" fill="white" />
@@ -115,7 +108,6 @@ async function Footer() {
                                     </Link>
                                 )}
                                 {setting.data.instegram && (
-
                                     <Link aria-label="linkedin" className='mx-3 hover:rotate-[360deg] transition-all duration-300' target='_blank' href={`${setting.data.instegram}`}>
                                         <svg width="20" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fillRule="evenodd" clipr="true"
@@ -127,9 +119,7 @@ async function Footer() {
                         )}
                         <span className='text-base text-center sm:text-start mt-8 sm:mt-0 md:mt-0'>All rights reserved to <Link target='_blank' className='text-orange-500 0 hover:opacity-80 font-semibold' href={"https://www.megatron-soft.com"}>Megatron</Link> © 2024</span>
                     </div>
-
                 </div>
-
             </div>
         </div>
     )

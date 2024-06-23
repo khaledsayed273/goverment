@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react'
 function Articles({ url, time }) {
 
     const [data, setData] = useState([])
-    const [limit, setLimit] = useState(6)
+    const [limit, setLimit] = useState(9)
     const [showLoading, setShowLoading] = useState(false)
 
     const getData = async (url, time, limit) => {
@@ -61,17 +61,13 @@ function Articles({ url, time }) {
                                         </Link>
                                     </div>
                                 </div>
-
                             </div>
                         ))
                     }
-
-
                 </div>
             ) : (
                 <Loading />
             )}
-
 
             <div className='flex justify-center items-center'>
                 {showLoading && (<Loading />)}
@@ -82,7 +78,6 @@ function Articles({ url, time }) {
                                 <path d="M1.5 7.93536L15.2232 7.79851M10.1182 1.41132L16.6412 7.9343L9.98677 14.5887" stroke="white" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
                             </svg>
                             <span className='ms-2 text-white font-bold text-xl font-serif'>اقرا المزيد</span>
-
                         </button>
                     </div>
                 )}

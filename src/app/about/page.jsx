@@ -9,7 +9,6 @@ import ayaNasser from "../../../public/images/small boss/aya nasser.jpg"
 import asmaa from "../../../public/images/small boss/asmaa.jpg"
 import walled from "../../../public/images/small boss/walled.jpg"
 import rizk from "../../../public/images/small boss/رزق.png"
-import aya from "../../../public/images/aya.jpg"
 import Link from 'next/link'
 
 function about() {
@@ -35,7 +34,6 @@ function about() {
         },
     
     ]
-
     const data2 = [
         
         {
@@ -70,7 +68,6 @@ function about() {
             image: mnn
         },
     ]
-  
     return (
         <main className="flex flex-col items-center  p-3 md:p-5">
             <div className='container mx-auto px-0 md:px-10'>

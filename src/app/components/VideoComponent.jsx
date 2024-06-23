@@ -9,7 +9,6 @@ function VideoComponent({ src }) {
             controls>
             <source src={src} type="video/mp4" />
         </video>
-
     )
 }
 

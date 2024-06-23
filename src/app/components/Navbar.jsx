@@ -96,7 +96,6 @@ function Navbar() {
                                     </ul>
                                 </li>
                             )
-
                         ))}
                     </ul>
                 </div>
@@ -106,7 +105,6 @@ function Navbar() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </button>
-
                 <Link className='flex flex-col justify-center items-center bg-gradient-to-r from-[#FFA585] to-[#FFEDA0] rounded-b-3xl py-3 md:py-5 px-4 md:px-7' href="/">
                     <div className='relative w-[40px] md:w-[50px]'>
                         <Image src={logo} alt='logo'/>
