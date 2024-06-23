@@ -25,7 +25,7 @@ async function history() {
 
   return (
     <>
-      <Header title={`كوبري دمياط التاريخي (جسر الحضارة) يعد أحد أقدم الكباري المتحركة في العالم، ويعود كوبري دمياط المعدني  للحياة بعد ترميمه ورفع كفاءته وتم تحويله لـ"مزار سياحي".`} img={historyImg} about={about} />
+      <Header title={`كوبري دمياط التاريخي (جسر الحضارة)`} img={historyImg} about={about} />
       <main className="flex flex-col items-center p-3 md:p-5">
         <div className='container mx-auto'>
           <p className=' md:mb-5 font-semibold md:font-lg md:leading-10	text-md leading-8 md:text-xl	text-[#01579B] text-center md:px-10 py-2'>
