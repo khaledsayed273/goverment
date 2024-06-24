@@ -33,7 +33,7 @@ function Header({ title, img, about }) {
                                 </div>
                             </>
                         )}
-                        <p className={`mt-10 font-medium  xl:leading-9   ${about ? "lg:block lg:w-11/12 lg:text-xl" : "md:block lg:w-1/2 lg:text-2xl hidden"} `}>
+                        <p className={`mt-10 font-medium  xl:leading-9   ${about ? "lg:block lg:w-11/12 lg:text-xl text-center sm:text-start" : "md:block lg:w-1/2 lg:text-2xl hidden"} `}>
                             {about ? about : defaultAbout}
                         </p>
                     </div>
