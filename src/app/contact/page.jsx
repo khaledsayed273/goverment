@@ -29,7 +29,7 @@ async function contact() {
                         <div className="grid lg:grid-cols-2 gap-5 lg:gap-14">
                             {/* right */}
                             <div>
-                                <h1 className='text-[#01579B] text-base lg:text-lg font-semibold'>تواصل معنا</h1>
+                                <p className='text-[#01579B] text-base lg:text-lg font-semibold'>تواصل معنا</p>
                                 <h2 className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text my-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold'>ابق علي تواصل معنا</h2>
                                 <p className='text-[#01579B] font-semibold text-sm lg:text-base mt-5'>هذا هو موقعنا الالكترونى الرسمى الوحيد يمكنكا التواصل معنا من خلاله
                                     او من خلال وسائل الاتصالات الاتيه ايضا
@@ -43,7 +43,7 @@ async function contact() {
                                             </svg>
                                         </div>
                                         <div className='ms-3 text-[#01579B]'>
-                                            <h1 className='mb-1 font-bold'>موقعنا الجغرافى</h1>
+                                            <h3 className='mb-1 font-bold'>موقعنا الجغرافى</h3>
                                             <p className='font-sans text-sm md:text-base'>كورنيش النيل ,محافظه دمياط,</p>
                                             <p className='font-sans text-sm md:text-base'>جمهورية مصر العربية</p>
                                         </div>
@@ -57,7 +57,7 @@ async function contact() {
                                                 </svg>
                                             </div>
                                             <div className='ms-3 text-[#01579B]'>
-                                                <h1 className='mb-1 font-bold'>رقم التليفون</h1>
+                                                <h3 className='mb-1 font-bold'>رقم التليفون</h3>
                                                 <p className='font-sans text-sm md:text-base'>{setting.data.phone}</p>
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ async function contact() {
                                                 </svg>
                                             </div>
                                             <div className='ms-3 text-[#01579B]'>
-                                                <h1 className='mb-1 font-bold'>البريد الالكتروني</h1>
+                                                <h3 className='mb-1 font-bold'>البريد الالكتروني</h3>
                                                 <p className='font-sans text-sm md:text-base'>{setting.data.email}</p>
                                             </div>
                                         </div>

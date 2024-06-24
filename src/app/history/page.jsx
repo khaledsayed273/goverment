@@ -47,7 +47,7 @@ async function history() {
           {data?.data?.images && (
             <SwiperHome data={data.data.images} />
           )}
-          <h1 style={{ lineHeight: "1.20" }} className='text-center bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-3xl lg:text-6xl font-semibold	'>“رحلة عبر الزمن” </h1>
+          <h3 style={{ lineHeight: "1.20" }} className='text-center bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-3xl lg:text-6xl font-semibold	'>“رحلة عبر الزمن” </h3>
           <div className="overflow-hidden mx-auto w-full h-[260px] sm:h-[300px] md:h-[400px] lg:w-[80%] lg:h-[600px] rounded-2xl mt-5 lg:mt-0 xl:mt-10">
             <VideoComponent src={"/videos/history.mp4"} />
           </div>

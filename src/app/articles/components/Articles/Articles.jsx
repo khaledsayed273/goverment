@@ -49,7 +49,7 @@ function Articles({ url, time }) {
                                     <Image sizes="(max-width:992px) , 100vw" fill src={item.image} alt={item.title} />
                                 </div>
                                 <div className='flex flex-col my-4 px-2'>
-                                    <h1 className='text-[#01579B] font-semibold text-base md:text-xl'>{item.title}</h1>
+                                    <h2 className='text-[#01579B] font-semibold text-base md:text-xl'>{item.title}</h2>
                                     <div className='mt-5 flex justify-between items-center left-5  bottom-4 right-5 absolute '>
                                         <p className='text-[#01579B] font-semibold text-sm'>{item.created_at}</p>
                                         <Link target='_blank' href={item.link}>

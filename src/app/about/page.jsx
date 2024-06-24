@@ -95,7 +95,7 @@ function about() {
                 </div>
 
                 <div className='mt-5 md:mt-16'>
-                    <h1 style={{ lineHeight: "1.30" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl  lg:text-3xl mb-4'>فريق عمل الموقع الالكترونى</h1>
+                    <h2 style={{ lineHeight: "1.30" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl  lg:text-3xl mb-4'>فريق عمل الموقع الالكترونى</h2>
                     <p className='text-[#01579B] font-bold text-center text-sm md:text-xl lg:w-[85%] xl:w-[75%] 2xl:w-[60%] mx-auto'>يشرف فريق عمل ميجاترون على هذا الموقع الالكترونى ويسهل سبل التواصل لضمان
                         الاداء الفعال وتنفيذ جميع الانشطه داخل الموقع بشكل محترف وايضا المساعده على
                         تعزيز الثقه لدى الجمهور يمكنك التعرف علي المزيد عنهم من خلال موقعهم الالكترونى
@@ -105,14 +105,14 @@ function about() {
 
 
                 <div className='mt-5 md:mt-16'>
-                    <h1 style={{ lineHeight: "1.25" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl '>مجلس الامناء والمسؤليين</h1>
+                    <h2 style={{ lineHeight: "1.25" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl '>مجلس الامناء والمسؤليين</h2>
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
                         {data1.map((item) => (
                             <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
                                 <div className='relative w-full h-[300px] md:h-[300px] overflow-hidden rounded-3xl'>
                                     <Image sizes='(min-width:992px), 100vw' fill src={item.image} alt={item.name} />
                                 </div>
-                                <h1 style={{ lineHeight: "1.25" }} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h1>
+                                <h3 style={{ lineHeight: "1.25" }} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h3>
                                 <p className='text-center text-xl md:text-2xl text-[#01579B] font-bold mt-2'>{item.about}</p>
                             </div>
                         ))}
@@ -120,14 +120,14 @@ function about() {
                 </div>
 
                 <div className='mt-5 md:mt-16'>
-                    <h1 style={{ lineHeight: "1.25" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl'>اعضاء اخرين </h1>
+                    <h2 style={{ lineHeight: "1.25" }} className='bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text text-center font-bold text-2xl lg:text-3xl'>اعضاء اخرين </h2>
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-7'>
                         {data2.map((item) => (
                             <div key={item.id} className='bg-[#E7F2FF] p-4 rounded-3xl'>
                                 <div className='relative w-full h-[300px] md:h-[300px] overflow-hidden rounded-3xl'>
                                     <Image sizes='(min-width:992px), 100vw' fill src={item.image} alt={item.name} />
                                 </div>
-                                <h1 style={{ lineHeight: "1.25" }} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h1>
+                                <h3 style={{ lineHeight: "1.25" }} className='text-center mt-2 text-lg md:text-3xl font-bold bg-gradient-to-r from-[#0061FF] to-[#60EFFF] text-transparent bg-clip-text'>{item.name}</h3>
                                 <p className='text-center text-xl md:text-2xl text-[#01579B] font-bold mt-2'>{item.about}</p>
                             </div>
                         ))}

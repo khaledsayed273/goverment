@@ -24,16 +24,17 @@ function Header({ title, img, about }) {
                                     مرحبا بكم فى
                                 </div>
                                 <div className='flex flex-col items-center md:ms-10 font-semibold'>
-                                    <div className='text-4xl md:text-6xl lg:text-8xl  my-5 '>
+                                    <h1 className='text-4xl md:text-6xl lg:text-8xl  my-5 '>
                                         كوبرى دمياط
-                                    </div>
-                                    <div className='text-3xl    md:text-5xl lg:text-6xl '>
-                                        الحضاري
-                                    </div>
+                                        <span className='text-3xl mt-6 text-center block md:text-5xl lg:text-6xl '>
+                                            الحضاري
+                                        </span>
+                                    </h1>
+
                                 </div>
                             </>
                         )}
-                        <p className={`mt-10 font-medium  xl:leading-9   ${about ? "lg:block lg:w-11/12 lg:text-xl text-center sm:text-start" : "md:block lg:w-1/2 lg:text-2xl hidden"} `}>
+                        <p className={`mt-10 font-medium xl:leading-9 ${about ? "lg:block lg:w-11/12 lg:text-xl text-center sm:text-start" : "md:block lg:w-1/2 lg:text-2xl hidden"} `}>
                             {about ? about : defaultAbout}
                         </p>
                     </div>

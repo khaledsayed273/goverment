@@ -61,7 +61,7 @@ async function page() {
                 <Image sizes="(max-width:992px) , 100vw" priority src={home} fill alt="cover" />
               </div>
               <div className="md:mt-5 xl:mt-7 lg:order-2">
-                <h1 style={{ lineHeight: "1.15" }} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center  text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text">الهدف من تجديده</h1>
+                <h2 style={{ lineHeight: "1.15" }} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center  text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text">الهدف من تجديده</h2>
                 <p className="text-[#01579B] font-semibold mt-5 xl:w-4/5 text-md md:text-xl leading-[30px] xl:text-2xl md:leading-[40px] lg:leading-[40px] xl:leading-[40px] 2xl:leading-[45px] text-center md:text-start">
                   البداية كانت في 2003 حين طرحت مناقصة لانشاء كوبري علي نيل دمياط بديلا للكوبري القديم الذي قد تهالك وتوقف حركة الفتح والاغلاق بالجزء المتحرك منه مما جعله عائقا لحركة الملاحة النهرية كما ان عرض الكوبري القديم كان ضيقا ولا يسمح بسهولة الحركة المرورية للسيارات عليه
                 </p>
@@ -72,16 +72,16 @@ async function page() {
                 <Image sizes="(max-width:992px) , 100vw" priority src={history} fill alt="bridge" />
               </div>
               <div className="md:mt-5 xl:mt-7 lg:order-2">
-                <h1 style={{ lineHeight: "1.15" }} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center   text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text"> عن الكوبرى </h1>
+                <h2 style={{ lineHeight: "1.15" }} className="bg-gradient-to-r from-[#0061FF] to-[#60EFFF] w-full md:w-auto text-center   text-4xl md:text-5xl xl:text-7xl font-bold	 inline-block text-transparent bg-clip-text"> عن الكوبرى </h2>
                 <p className="text-[#01579B] font-semibold mt-5 xl:w-4/5 text-md md:text-xl leading-[30px] xl:text-2xl md:leading-[40px] lg:leading-[40px] xl:leading-[40px] 2xl:leading-[45px] text-center md:text-start">
                   كوبرى دمياط من أقدم الكبارى المعدنية المتحركة على مستوى العالم، أنشئ عام 1890، وهذا الكوبرى كان جزءًا من كوبرى إمبابة القديم على نيل الجيزة، وبلغ طوله 495 مترًا، ثم نُقل جزء منه بطول 170 مترًا إلى موقعه الحالى بدمياط، طبقًا لعرض النيل فى ذلك الموقع عام 1927.
                 </p>
               </div>
             </div>
           </div>
-          <h1 className=' font-semibold md:font-lg leading-7 md:leading-10	text-md md:text-xl	text-[#01579B] text-center md:px-10 py-2'>
+          <p className='font-semibold md:font-lg leading-7 md:leading-10	text-md md:text-xl	text-[#01579B] text-center md:px-10 py-2'>
             ومن جانبها صرحت الدكتورة منال عوض محافظ دمياط ، ان المحافظة قد سعت منذ سنوات لتطوير الكوبرى واستعادة دوره البارز الذى حققه بعد نقله عام ٢٠٠٧ بتخطيط علمى دقيق و ملحمة هندسية قدمها الدكتور محمد فتحي البرادعى محافظ دمياط الأسبق، حيث كان جسر الحضارة يُعد منارة ثقافية ومركزًا لعرض الوان الفنون، قبل أن يتعرض للإهمال والأعمال التخريبية خلال أحداث ثورة يناير ٢٠١١، مشيرة إلى أن هذه المساعى تضمنت وضع منهجية محددة لتطوير وإعادة تأهيل الكوبرى لاستعادة مكانته الثقافية و الحضارية وتعظيم الاستفادة من الأثر واستغلاله فى تنفيذ مشروع متكامل يعود بالنفع على المحافظة بما يساهم فى تنشيط السياحة وترويجها وتحقيق التنمية بهذا الملف وذلك وفقًا لتوجيهات القيادة السياسية وأجهزة الدولة بالاهتمام بالمعالم الأثرية باعتبارها محور ذى أهمية وثيقة يساهم في تعزيز الاقتصادات المحلية.
-          </h1>
+          </p>
           {data?.data?.images && (
             <div className="my-7">
               <SwiperHome data={data.data.images} />

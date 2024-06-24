@@ -28,7 +28,7 @@ async function article() {
                     </div>
                     <div className='grid md:grid-cols-2 md:gap-10 lg:gap-20 mt-10 mb-3'>
                         <div className='flex flex-col justify-end items-center'>
-                            <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-black  lg:mb-10 xl:mb-14 2xl:mb-20'>اقدم كوبرى سكه حديد فى مصر والعالم يفتح بشكل دائرى .</h1>
+                            <p style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-black  lg:mb-10 xl:mb-14 2xl:mb-20'>اقدم كوبرى سكه حديد فى مصر والعالم يفتح بشكل دائرى .</p>
                             <Link href={"/contact"} className='bg-gradient-to-r mt-7 mb-5 from-[#0061FF] to-[#3c939c] rounded-full py-2 px-7 inline-flex justify-between items-center'>
                                 <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.5 7.93536L15.2232 7.79851M10.1182 1.41132L16.6412 7.9343L9.98677 14.5887" stroke="white" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />

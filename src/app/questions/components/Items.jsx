@@ -31,13 +31,13 @@ function Item({ item }) {
                         </svg>
                     </div>
                 </button>
-                <span className='text-center mx-auto text-sm md:text-base text-[#01579B] font-bold '>{item.question}</span>
+                <h2 className='text-center mx-auto text-sm md:text-base text-[#01579B] font-bold '>{item.question}</h2>
             </div>
 
             <animated.div style={style} className="overflow-hidden">
-                <div className="text-center text-[#01579B] font-semibold md:font-semibold leading-6 xl:leading-8 mt-5 text-sm lg:text-base p-4  rounded">
+                <p className="text-center text-[#01579B] font-semibold md:font-semibold leading-6 xl:leading-8 mt-5 text-sm lg:text-base p-4  rounded">
                     {item.answer}
-                </div>
+                </p>
             </animated.div>
         </div>
     );
