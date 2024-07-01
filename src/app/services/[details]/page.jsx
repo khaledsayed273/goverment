@@ -48,6 +48,8 @@ async function servicesDetails({ params }) {
     const url = process.env.baseUrl
     const time = +process.env.time
     const details = await getServicesDetails(url, time, params.details)
+
+    console.log(details.data.events);
     return (
         details.status && (
             <>
@@ -92,9 +94,15 @@ async function servicesDetails({ params }) {
                         {details.data.events.length > 0 && (
                             <>
                                 <div>
-                                    <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h1>
+                                    <h3 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h3>
                                 </div>
-                                <div >
+                                <div className='my-10'>
+                                    <h3 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-xl  lg:text-2xl xl:text-3xl 2xl:leading-[60px]'> {details.data.events[0].name}</h3>
+                                    <p className=' mb-10 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2 '>
+                                        {details.data.events[0].description}
+                                    </p>
+                                </div>
+                                <div>
                                     <SwiperHome data={details.data.events[0].images} title={true} />
                                 </div>
                             </>
