@@ -100,7 +100,7 @@ function SwiperHome({ data, title }) {
                             blurDataURL={`data:image/svg+xml;base64,${toBase64(
                                 convertImage(700, 475)
                             )}`}
-                            sizes='(max-width:992px), 100vw' src={item.path} fill alt='image' />
+                            sizes='(max-width:992px) 100vw' src={item.path} fill alt='image' />
                     </div>
                 ))}
             </Slider>
