@@ -95,7 +95,7 @@ async function servicesDetails({ params }) {
                                     <h1 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h1>
                                 </div>
                                 <div >
-                                    <SwiperHome title={true} />
+                                    <SwiperHome data={details.data.events[0].images} title={true} />
                                 </div>
                             </>
                         )}
