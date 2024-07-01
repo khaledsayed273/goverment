@@ -97,8 +97,8 @@ async function servicesDetails({ params }) {
                                     <h3 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-3xl  lg:text-4xl xl:text-5xl 2xl:leading-[60px]'>بعض الاحداث المقامة بها</h3>
                                 </div>
                                 <div className='my-10'>
-                                    <h3 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-xl  lg:text-2xl xl:text-3xl 2xl:leading-[60px]'> {details.data.events[0].name}</h3>
-                                    <p className=' mb-10 font-semibold md:font-lg md:leading-10	text-lg md:text-2xl	text-[#01579B] text-center md:px-10 py-2 '>
+                                    <h3 style={{ lineHeight: "1.15" }} className='bg-gradient-to-r from-[#0061FF] to-[#47b4c0] text-transparent bg-clip-text text-center font-bold my-5 text-2xl  lg:text-3xl xl:text-4xl 2xl:leading-[60px]'> {details.data.events[0].name}</h3>
+                                    <p className=' mb-10 font-semibold md:font-lg lg:leading-10	text-lg lg:text-2xl	text-[#01579B] text-center md:px-10 py-2 '>
                                         {details.data.events[0].description}
                                     </p>
                                 </div>
