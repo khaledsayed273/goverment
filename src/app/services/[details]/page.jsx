@@ -49,7 +49,6 @@ async function servicesDetails({ params }) {
     const time = +process.env.time
     const details = await getServicesDetails(url, time, params.details)
 
-    console.log(details.data.events);
     return (
         details.status && (
             <>
